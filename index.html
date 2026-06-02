@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-Hant">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,12 +21,13 @@
           <a href="#studio" data-i18n="navStudio">Studio</a>
           <a href="#services" data-i18n="navServices">Services</a>
           <a href="#work" data-i18n="navWork">Work</a>
+          <a href="#completed-project" data-i18n="navCompleted">VR Tour</a>
           <a href="#contact" data-i18n="navContact">Contact</a>
         </nav>
 
         <div class="language-switch" aria-label="Language switch">
-          <button class="is-active" type="button" data-lang="en">EN</button>
-          <button type="button" data-lang="zh">繁</button>
+          <button class="is-active" type="button" data-lang="zh">繁</button>
+          <button type="button" data-lang="en">EN</button>
         </div>
 
         <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
@@ -178,6 +179,40 @@
         </div>
       </section>
 
+      <section class="completed-project section" id="completed-project">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="completedEyebrow">Completed Project</p>
+          <h2 data-i18n="completedTitle">Explore a finished interior in VR.</h2>
+        </div>
+        <div class="completed-project-panel">
+          <div>
+            <p data-i18n="completedCopy">
+              Step inside a completed Chron Atelier project through a 720 virtual tour and experience
+              the layout, material palette, furniture placement, and fitted details in context.
+            </p>
+            <a
+              class="button primary"
+              href="https://720.3vjia.com/S156972198?lang=zh-CN"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-i18n="completedButton"
+            >
+              Open VR Tour
+            </a>
+          </div>
+          <a
+            class="vr-preview"
+            href="https://720.3vjia.com/S156972198?lang=zh-CN"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open completed project VR tour"
+          >
+            <span>720</span>
+            <strong data-i18n="completedPreview">Virtual Project Walkthrough</strong>
+          </a>
+        </div>
+      </section>
+
       <section class="process section">
         <div class="section-heading">
           <p class="eyebrow" data-i18n="processEyebrow">Process</p>
@@ -206,6 +241,10 @@
           <p data-i18n="contactCopy">
             Based in Hong Kong, Chron Atelier works across residential and commercial interiors,
             furnishing packages, and fitting-out scopes.
+          </p>
+          <p class="contact-email">
+            <span data-i18n="contactEmailLabel">Email</span>
+            <a href="mailto:operation@chronatelierhk.com">operation@chronatelierhk.com</a>
           </p>
         </div>
         <form class="contact-form" action="https://formsubmit.co/operation@chronatelierhk.com" method="post">
@@ -243,7 +282,10 @@
 
     <footer class="site-footer">
       <p><img src="assets/logo-transparent.png" alt="" /> Chron Atelier · 刻研設計</p>
-      <p data-i18n="footerCopy">Hong Kong based interior design, furnishing and fitting company.</p>
+      <p>
+        <span data-i18n="footerCopy">Hong Kong based interior design, furnishing and fitting company.</span>
+        <a href="mailto:operation@chronatelierhk.com">operation@chronatelierhk.com</a>
+      </p>
     </footer>
 
     <script src="script.js"></script>

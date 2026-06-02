@@ -571,6 +571,72 @@ h1 span {
   color: var(--white);
 }
 
+.completed-project {
+  background:
+    linear-gradient(90deg, rgba(255, 248, 239, 0.96), rgba(244, 225, 201, 0.94)),
+    url("assets/logo-transparent.png") right 8% center / min(38vw, 500px) auto no-repeat;
+}
+
+.completed-project-panel {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.9fr) minmax(320px, 1.1fr);
+  gap: clamp(24px, 5vw, 72px);
+  align-items: stretch;
+  margin-top: 40px;
+}
+
+.completed-project-panel p {
+  max-width: 620px;
+  margin: 0 0 28px;
+  color: var(--muted);
+  font-size: clamp(17px, 2vw, 21px);
+}
+
+.vr-preview {
+  position: relative;
+  display: grid;
+  min-height: 320px;
+  align-content: end;
+  overflow: hidden;
+  padding: clamp(24px, 4vw, 42px);
+  background:
+    linear-gradient(135deg, rgba(52, 34, 24, 0.94), rgba(141, 82, 48, 0.7)),
+    url("assets/chron-interior-hero.jpg") center / cover;
+  color: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.vr-preview::before {
+  position: absolute;
+  inset: 0;
+  background: url("assets/logo-transparent.png") right -40px bottom -40px / 360px auto no-repeat;
+  content: "";
+  filter: brightness(0) invert(1);
+  opacity: 0.14;
+}
+
+.vr-preview span,
+.vr-preview strong {
+  position: relative;
+  z-index: 1;
+}
+
+.vr-preview span {
+  margin-bottom: 16px;
+  color: #f0c27e;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(58px, 8vw, 112px);
+  line-height: 0.85;
+}
+
+.vr-preview strong {
+  max-width: 440px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(28px, 4vw, 52px);
+  font-weight: 500;
+  line-height: 1.02;
+}
+
 .process {
   display: grid;
   grid-template-columns: minmax(260px, 0.8fr) minmax(320px, 1fr);
@@ -638,6 +704,27 @@ h1 span {
   font-size: 18px;
 }
 
+.contact-email {
+  display: grid;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.contact-email span {
+  color: #f0c27e;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.contact-email a,
+.site-footer a {
+  color: var(--white);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .contact-form {
   display: grid;
   gap: 18px;
@@ -701,6 +788,13 @@ textarea {
   margin: 0;
 }
 
+.site-footer p:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px 16px;
+}
+
 .site-footer p:first-child {
   display: inline-flex;
   align-items: center;
@@ -755,6 +849,7 @@ textarea {
   .metrics,
   .service-grid,
   .work-grid,
+  .completed-project-panel,
   .intro,
   .company-description-inner,
   .process,

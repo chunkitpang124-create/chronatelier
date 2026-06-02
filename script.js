@@ -8,6 +8,7 @@ const translations = {
     navStudio: "Studio",
     navServices: "Services",
     navWork: "Work",
+    navCompleted: "VR Tour",
     navContact: "Contact",
     heroEyebrow: "Hong Kong Interior Design · Furnishing · Fitting",
     heroCopy:
@@ -49,6 +50,12 @@ const translations = {
     workTwoTitle: "Furniture schemes that make smaller rooms feel composed.",
     workThreeType: "Fitting-Out",
     workThreeTitle: "Clean construction details for daily use.",
+    completedEyebrow: "Completed Project",
+    completedTitle: "Explore a finished interior in VR.",
+    completedCopy:
+      "Step inside a completed Chron Atelier project through a 720 virtual tour and experience the layout, material palette, furniture placement, and fitted details in context.",
+    completedButton: "Open VR Tour",
+    completedPreview: "Virtual Project Walkthrough",
     processEyebrow: "Process",
     processTitle: "Clear steps, careful decisions.",
     processOneTitle: "Measure",
@@ -61,6 +68,7 @@ const translations = {
     contactTitle: "Tell us about the space you want to shape.",
     contactCopy:
       "Based in Hong Kong, Chron Atelier works across residential and commercial interiors, furnishing packages, and fitting-out scopes.",
+    contactEmailLabel: "Email",
     formName: "Name",
     formEmail: "Email",
     formProject: "Project Type",
@@ -77,6 +85,7 @@ const translations = {
     navStudio: "設計室",
     navServices: "服務",
     navWork: "作品方向",
+    navCompleted: "VR導覽",
     navContact: "聯絡",
     heroEyebrow: "香港室內設計 · 傢俬配置 · 裝修工程",
     heroCopy: "為住宅、辦公室及商業空間建立細緻而實用的室內方案，由空間規劃、訂製傢俬到現場施工一併照應。",
@@ -115,6 +124,12 @@ const translations = {
     workTwoTitle: "讓細小空間更完整、更從容的傢俬方案。",
     workThreeType: "裝修工程",
     workThreeTitle: "為日常使用而設的乾淨施工細節。",
+    completedEyebrow: "完成項目",
+    completedTitle: "以 VR 導覽走進完成項目。",
+    completedCopy:
+      "透過 720 虛擬導覽走進 Chron Atelier 刻研設計的完成項目，從空間動線、物料配搭、傢俬配置到裝修細節，感受實際落成效果。",
+    completedButton: "開啟 VR 導覽",
+    completedPreview: "完成項目虛擬導覽",
     processEyebrow: "流程",
     processTitle: "清晰步驟，細心決策。",
     processOneTitle: "度量",
@@ -126,6 +141,7 @@ const translations = {
     contactEyebrow: "預約諮詢",
     contactTitle: "告訴我們你想塑造的空間。",
     contactCopy: "刻研設計立足香港，承接住宅及商業室內設計、傢俬配置方案及裝修工程。",
+    contactEmailLabel: "電郵",
     formName: "姓名",
     formEmail: "電郵",
     formProject: "項目類型",
@@ -173,7 +189,7 @@ const setLanguage = (lang) => {
     button.classList.toggle("is-active", button.dataset.lang === lang);
   });
 
-  localStorage.setItem("chronLanguage", lang);
+  localStorage.setItem("chronLanguageV2", lang);
 };
 
 languageButtons.forEach((button) => {
@@ -181,5 +197,5 @@ languageButtons.forEach((button) => {
 });
 
 updateHeader();
-setLanguage(localStorage.getItem("chronLanguage") || "en");
+setLanguage(localStorage.getItem("chronLanguageV2") || "zh");
 window.addEventListener("scroll", updateHeader, { passive: true });
