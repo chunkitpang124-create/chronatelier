@@ -2,6 +2,11 @@ const header = document.querySelector(".site-header");
 const toggle = document.querySelector(".nav-toggle");
 const navLinks = document.querySelectorAll(".site-nav a");
 const languageButtons = document.querySelectorAll("[data-lang]");
+const whatsappLinks = document.querySelectorAll("[data-whatsapp-link]");
+const whatsappMessages = {
+  en: "Inquiry for interior design/furnishing",
+  zh: "裝修查詢",
+};
 
 const translations = {
   en: {
@@ -189,6 +194,10 @@ const setLanguage = (lang) => {
 
   languageButtons.forEach((button) => {
     button.classList.toggle("is-active", button.dataset.lang === lang);
+  });
+
+  whatsappLinks.forEach((link) => {
+    link.href = `https://wa.me/85298065099?text=${encodeURIComponent(whatsappMessages[lang] || whatsappMessages.zh)}`;
   });
 
   localStorage.setItem("chronLanguageV2", lang);

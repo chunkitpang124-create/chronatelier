@@ -731,6 +731,29 @@ h1 span {
   text-underline-offset: 4px;
 }
 
+.whatsapp-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.whatsapp-icon {
+  display: inline-grid;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 999px;
+  background: #25d366;
+  color: #ffffff;
+}
+
+.whatsapp-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
 .contact-form {
   display: grid;
   gap: 18px;
