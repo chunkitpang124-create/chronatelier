@@ -69,6 +69,7 @@ const translations = {
     contactCopy:
       "Based in Hong Kong, Chron Atelier works across residential and commercial interiors, furnishing packages, and fitting-out scopes.",
     contactEmailLabel: "Email",
+    contactWhatsappLabel: "WhatsApp",
     formName: "Name",
     formEmail: "Email",
     formProject: "Project Type",
@@ -142,6 +143,7 @@ const translations = {
     contactTitle: "告訴我們你想塑造的空間。",
     contactCopy: "刻研設計立足香港，承接住宅及商業室內設計、傢俬配置方案及裝修工程。",
     contactEmailLabel: "電郵",
+    contactWhatsappLabel: "WhatsApp",
     formName: "姓名",
     formEmail: "電郵",
     formProject: "項目類型",

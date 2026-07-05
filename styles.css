@@ -704,20 +704,26 @@ h1 span {
   font-size: 18px;
 }
 
-.contact-email {
+.contact-methods {
   display: grid;
-  gap: 8px;
+  gap: 18px;
   margin-top: 28px;
 }
 
-.contact-email span {
+.contact-method {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+}
+
+.contact-method span {
   color: #f0c27e;
   font-size: 12px;
   font-weight: 900;
   text-transform: uppercase;
 }
 
-.contact-email a,
+.contact-method a,
 .site-footer a {
   color: var(--white);
   font-weight: 800;
