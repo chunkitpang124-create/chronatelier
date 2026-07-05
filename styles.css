@@ -737,6 +737,18 @@ h1 span {
   gap: 9px;
 }
 
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 16px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+
 .whatsapp-icon {
   display: inline-grid;
   width: 24px;
@@ -748,7 +760,27 @@ h1 span {
   color: #ffffff;
 }
 
-.whatsapp-icon svg {
+.social-icon {
+  display: inline-grid;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 999px;
+  color: #ffffff;
+}
+
+.instagram-link .social-icon {
+  background:
+    radial-gradient(circle at 30% 110%, #fdf497 0 18%, #fd5949 43%, #d6249f 62%, #285aeb 100%);
+}
+
+.facebook-link .social-icon {
+  background: #1877f2;
+}
+
+.whatsapp-icon svg,
+.social-icon svg {
   width: 20px;
   height: 20px;
   fill: currentColor;
